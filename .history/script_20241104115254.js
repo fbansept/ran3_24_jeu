@@ -25,15 +25,12 @@ function frame() {
     positionXballe < positionXbarre + largeurBarre &&
     positionYballe > positionYBarre &&
     positionYballe < positionYBarre + hauteurBarre
-  ) {
-    vitesseXballe = -vitesseXballe;
-  }
+  )
+    if (toucheFlecheBasPresse && positionYBarre < hauteurScene - hauteurBarre) {
+      //----- GESTION DES EVENEMENTS CLAVIERS ------
 
-  if (toucheFlecheBasPresse && positionYBarre < hauteurScene - hauteurBarre) {
-    //----- GESTION DES EVENEMENTS CLAVIERS ------
-
-    positionYBarre += 8;
-  }
+      positionYBarre += 8;
+    }
 
   if (toucheFlecheHautPresse && positionYBarre > 0) {
     positionYBarre -= 8;

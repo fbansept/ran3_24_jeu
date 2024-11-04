@@ -7,7 +7,7 @@ function frame() {
   balle.style.left = positionXballe + "px";
   balle.style.top = positionYballe + "px";
 
-  barre.style.left = positionXbarre + "px";
+  barre.style.left = positionXBarre + "px";
   barre.style.top = positionYBarre + "px";
 
   //----- GESTION DES COLISIONS ------
@@ -20,18 +20,11 @@ function frame() {
     vitesseYballe = -vitesseYballe;
   }
 
-  if (
-    positionXballe > positionXbarre &&
-    positionXballe < positionXbarre + largeurBarre &&
-    positionYballe > positionYBarre &&
-    positionYballe < positionYBarre + hauteurBarre
-  ) {
-    vitesseXballe = -vitesseXballe;
-  }
+  if(positionXballe > )
+
+  //----- GESTION DES EVENEMENTS CLAVIERS ------
 
   if (toucheFlecheBasPresse && positionYBarre < hauteurScene - hauteurBarre) {
-    //----- GESTION DES EVENEMENTS CLAVIERS ------
-
     positionYBarre += 8;
   }
 
@@ -64,7 +57,7 @@ scene.style.height = hauteurScene + "px";
 const barre = document.querySelector("#barre");
 let largeurBarre = 50;
 let hauteurBarre = 200;
-let positionXbarre = 100;
+let positionXBarre = 100;
 let positionYBarre = hauteurScene / 2 - hauteurBarre / 2;
 barre.style.width = largeurBarre + "px";
 barre.style.height = hauteurBarre + "px";

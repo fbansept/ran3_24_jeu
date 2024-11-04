@@ -20,18 +20,11 @@ function frame() {
     vitesseYballe = -vitesseYballe;
   }
 
-  if (
-    positionXballe > positionXbarre &&
-    positionXballe < positionXbarre + largeurBarre &&
-    positionYballe > positionYBarre &&
-    positionYballe < positionYBarre + hauteurBarre
-  ) {
-    vitesseXballe = -vitesseXballe;
-  }
+  if(positionXballe > positionXbarre && positionXballe < positionXbarre + largeurBarre &&  )
+
+  //----- GESTION DES EVENEMENTS CLAVIERS ------
 
   if (toucheFlecheBasPresse && positionYBarre < hauteurScene - hauteurBarre) {
-    //----- GESTION DES EVENEMENTS CLAVIERS ------
-
     positionYBarre += 8;
   }
 
