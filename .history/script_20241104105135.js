@@ -27,7 +27,7 @@ let largeurScene = 1000;
 let toucheFlecheBasPresse = false;
 let toucheFlecheHautPresse = false;
 
-const balle = document.querySelector("#balle");
+const balle = document.querySelector("#joueur");
 const scene = document.querySelector("#scene");
 scene.style.width = largeurScene + "px";
 scene.style.height = hauteurScene + "px";

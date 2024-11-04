@@ -1,38 +1,38 @@
 function frame() {
-  positionXballe += vitesseXballe;
-  positionYballe += vitesseYballe;
+  positionXjoueur += vitesseX;
+  positionYjoueur += vitesseY;
 
-  balle.style.left = positionXballe + "px";
-  balle.style.top = positionYballe + "px";
+  joueur.style.left = positionXjoueur + "px";
+  joueur.style.top = positionYjoueur + "px";
 
-  if (positionXballe >= largeurScene - largeurBalle || positionXballe <= 0) {
-    vitesseXballe = -vitesseXballe;
+  if (positionXjoueur >= largeurScene - largeurJoueur || positionXjoueur <= 0) {
+    vitesseX = -vitesseX;
   }
 
-  if (positionYballe >= hauteurScene - largeurBalle || positionYballe <= 0) {
-    vitesseYballe = -vitesseYballe;
+  if (positionYjoueur >= hauteurScene - largeurJoueur || positionYjoueur <= 0) {
+    vitesseY = -vitesseY;
   }
 
   console.log(toucheFlecheBasPresse);
 }
 
-let positionXballe = 0;
-let vitesseXballe = 10;
-let positionYballe = 0;
-let vitesseYballe = 8;
+let positionXBalle = 0;
+let vitesseX = 10;
+let positionYjoueur = 0;
+let vitesseY = 8;
 
-let largeurBalle = 100;
+let largeurJoueur = 100;
 let hauteurScene = 1000;
 let largeurScene = 1000;
 let toucheFlecheBasPresse = false;
 let toucheFlecheHautPresse = false;
 
-const balle = document.querySelector("#balle");
+const joueur = document.querySelector("#joueur");
 const scene = document.querySelector("#scene");
 scene.style.width = largeurScene + "px";
 scene.style.height = hauteurScene + "px";
-balle.style.width = largeurBalle + "px";
-balle.style.height = largeurBalle + "px";
+joueur.style.width = largeurJoueur + "px";
+joueur.style.height = largeurJoueur + "px";
 
 document.addEventListener("keydown", (e) => {
   if (e.code == "ArrowDown") {
