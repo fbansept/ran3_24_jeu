@@ -5,11 +5,11 @@ function frame() {
   joueur.style.left = positionXjoueur + "px";
   joueur.style.top = positionYjoueur + "px";
 
-  if (positionXjoueur >= largeurScene - largeurJoueur || positionXjoueur <= 0) {
+  if (positionXjoueur >= 1150 || positionXjoueur <= 0) {
     vitesseX = -vitesseX;
   }
 
-  if (positionYjoueur >= hauteurScene - largeurJoueur || positionYjoueur <= 0) {
+  if (positionYjoueur >= 550 || positionYjoueur <= 0) {
     vitesseY = -vitesseY;
   }
 }
@@ -24,10 +24,7 @@ let hauteurScene = 1000;
 let largeurScene = 1000;
 
 const joueur = document.querySelector("#joueur");
-const scene = document.querySelector("#scene");
-scene.style.width = largeurScene + "px";
-scene.style.height = hauteurScene + "px";
-joueur.style.width = largeurJoueur + "px";
-joueur.style.height = largeurJoueur + "px";
+const joueur = document.querySelector("#joueur");
+
 
 setInterval(frame, 1000 / 60);

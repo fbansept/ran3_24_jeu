@@ -25,9 +25,9 @@ let largeurScene = 1000;
 
 const joueur = document.querySelector("#joueur");
 const scene = document.querySelector("#scene");
-scene.style.width = largeurScene + "px";
-scene.style.height = hauteurScene + "px";
-joueur.style.width = largeurJoueur + "px";
-joueur.style.height = largeurJoueur + "px";
+scene.style.width = largeurScene;
+scene.style.height = hauteurScene;
+joueur.style.width = largeurJoueur;
+joueur.style.height = largeurJoueur;
 
 setInterval(frame, 1000 / 60);
