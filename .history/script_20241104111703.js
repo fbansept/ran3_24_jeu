@@ -33,37 +33,42 @@ function frame() {
 
 //---- INITIALISATION DE LA BALLE ------
 
-const balle = document.querySelector("#balle");
 let positionXballe = 0;
 let vitesseXballe = 10;
 let positionYballe = 0;
 let vitesseYballe = 8;
 let largeurBalle = 100;
-balle.style.width = largeurBalle + "px";
-balle.style.height = largeurBalle + "px";
 
 //---- INITIALISATION DE LA SCENE ------
 
 const scene = document.querySelector("#scene");
 const hauteurScene = 1000;
 const largeurScene = 1000;
-scene.style.width = largeurScene + "px";
-scene.style.height = hauteurScene + "px";
 
 //---- INITIALISATION DE LA BARRE ------
 
+
+
 const barre = document.querySelector("#barre");
+const balle = document.querySelector("#balle");
 let largeurBarre = 50;
 let hauteurBarre = 200;
 let positionXBarre = 100;
 let positionYBarre = hauteurScene / 2 - hauteurBarre / 2;
-barre.style.width = largeurBarre + "px";
-barre.style.height = hauteurBarre + "px";
 
-//---- INITIALISATION DES EVENEMENTS ------
+//---- INITIALISATION DE LA BARRE ------
 
 let toucheFlecheBasPresse = false;
 let toucheFlecheHautPresse = false;
+
+scene.style.width = largeurScene + "px";
+scene.style.height = hauteurScene + "px";
+
+balle.style.width = largeurBalle + "px";
+balle.style.height = largeurBalle + "px";
+
+barre.style.width = largeurBarre + "px";
+barre.style.height = hauteurBarre + "px";
 
 document.addEventListener("keydown", (e) => {
   if (e.code == "ArrowDown") {

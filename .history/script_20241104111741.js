@@ -57,8 +57,6 @@ let largeurBarre = 50;
 let hauteurBarre = 200;
 let positionXBarre = 100;
 let positionYBarre = hauteurScene / 2 - hauteurBarre / 2;
-barre.style.width = largeurBarre + "px";
-barre.style.height = hauteurBarre + "px";
 
 //---- INITIALISATION DES EVENEMENTS ------
 
@@ -84,5 +82,10 @@ document.addEventListener("keyup", (e) => {
     toucheFlecheHautPresse = false;
   }
 });
+
+
+
+
+
 
 setInterval(frame, 1000 / 60);

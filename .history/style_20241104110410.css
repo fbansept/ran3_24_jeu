@@ -19,8 +19,7 @@ body {
   overflow: hidden;
 }
 
-#barre,
-#balle {
+#barre {
   position: absolute;
 }
 
@@ -29,5 +28,5 @@ body {
 }
 
 #barre {
-  background-color: blue;
+  background-color: red;
 }

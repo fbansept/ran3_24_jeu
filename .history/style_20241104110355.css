@@ -19,15 +19,12 @@ body {
   overflow: hidden;
 }
 
-#barre,
 #balle {
   position: absolute;
-}
-
-#balle {
   background-color: red;
 }
 
-#barre {
-  background-color: blue;
+#balle {
+  position: absolute;
+  background-color: red;
 }

@@ -39,16 +39,12 @@ let vitesseXballe = 10;
 let positionYballe = 0;
 let vitesseYballe = 8;
 let largeurBalle = 100;
-balle.style.width = largeurBalle + "px";
-balle.style.height = largeurBalle + "px";
 
 //---- INITIALISATION DE LA SCENE ------
 
 const scene = document.querySelector("#scene");
 const hauteurScene = 1000;
 const largeurScene = 1000;
-scene.style.width = largeurScene + "px";
-scene.style.height = hauteurScene + "px";
 
 //---- INITIALISATION DE LA BARRE ------
 
@@ -57,8 +53,6 @@ let largeurBarre = 50;
 let hauteurBarre = 200;
 let positionXBarre = 100;
 let positionYBarre = hauteurScene / 2 - hauteurBarre / 2;
-barre.style.width = largeurBarre + "px";
-barre.style.height = hauteurBarre + "px";
 
 //---- INITIALISATION DES EVENEMENTS ------
 
@@ -84,5 +78,16 @@ document.addEventListener("keyup", (e) => {
     toucheFlecheHautPresse = false;
   }
 });
+
+scene.style.width = largeurScene + "px";
+scene.style.height = hauteurScene + "px";
+
+balle.style.width = largeurBalle + "px";
+balle.style.height = largeurBalle + "px";
+
+barre.style.width = largeurBarre + "px";
+barre.style.height = hauteurBarre + "px";
+
+
 
 setInterval(frame, 1000 / 60);

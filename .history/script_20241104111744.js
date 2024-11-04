@@ -85,4 +85,9 @@ document.addEventListener("keyup", (e) => {
   }
 });
 
+
+
+
+
+
 setInterval(frame, 1000 / 60);

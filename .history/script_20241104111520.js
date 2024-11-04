@@ -1,16 +1,16 @@
 function frame() {
-  //----- GESTION DES DEPLACEMENTS ------
+
 
   positionXballe += vitesseXballe;
   positionYballe += vitesseYballe;
 
   balle.style.left = positionXballe + "px";
   balle.style.top = positionYballe + "px";
-
+  
   barre.style.left = positionXBarre + "px";
   barre.style.top = positionYBarre + "px";
 
-  //----- GESTION DES COLISIONS ------
+  //----- GESTION DES COLISIONS 
 
   if (positionXballe >= largeurScene - largeurBalle || positionXballe <= 0) {
     vitesseXballe = -vitesseXballe;
@@ -20,7 +20,6 @@ function frame() {
     vitesseYballe = -vitesseYballe;
   }
 
-  //----- GESTION DES EVENEMENTS CLAVIERS ------
 
   if (toucheFlecheBasPresse && positionYBarre < hauteurScene - hauteurBarre) {
     positionYBarre += 8;
@@ -31,39 +30,35 @@ function frame() {
   }
 }
 
-//---- INITIALISATION DE LA BALLE ------
-
-const balle = document.querySelector("#balle");
 let positionXballe = 0;
 let vitesseXballe = 10;
 let positionYballe = 0;
 let vitesseYballe = 8;
+
 let largeurBalle = 100;
-balle.style.width = largeurBalle + "px";
-balle.style.height = largeurBalle + "px";
-
-//---- INITIALISATION DE LA SCENE ------
-
-const scene = document.querySelector("#scene");
 const hauteurScene = 1000;
 const largeurScene = 1000;
-scene.style.width = largeurScene + "px";
-scene.style.height = hauteurScene + "px";
 
-//---- INITIALISATION DE LA BARRE ------
-
-const barre = document.querySelector("#barre");
 let largeurBarre = 50;
 let hauteurBarre = 200;
 let positionXBarre = 100;
 let positionYBarre = hauteurScene / 2 - hauteurBarre / 2;
-barre.style.width = largeurBarre + "px";
-barre.style.height = hauteurBarre + "px";
-
-//---- INITIALISATION DES EVENEMENTS ------
 
 let toucheFlecheBasPresse = false;
 let toucheFlecheHautPresse = false;
+
+const balle = document.querySelector("#balle");
+const scene = document.querySelector("#scene");
+const barre = document.querySelector("#barre");
+
+scene.style.width = largeurScene + "px";
+scene.style.height = hauteurScene + "px";
+
+balle.style.width = largeurBalle + "px";
+balle.style.height = largeurBalle + "px";
+
+barre.style.width = largeurBarre + "px";
+barre.style.height = hauteurBarre + "px";
 
 document.addEventListener("keydown", (e) => {
   if (e.code == "ArrowDown") {
