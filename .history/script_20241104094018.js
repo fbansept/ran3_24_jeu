@@ -19,7 +19,7 @@ let vitesseX = 10;
 let positionYjoueur = 0;
 let vitesseY = 8;
 
-let largeurJoueur = 100;
+let largeurJoueur = 50;
 let hauteurScene = 1000;
 let largeurScene = 1000;
 
