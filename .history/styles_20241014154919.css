@@ -1,0 +1,16 @@
+main > section > div > article > .image > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+main > section > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > section > div > article > .image >  {
+  object-fit: cover;
+  width: 100%;
+}
+

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+/*un commentaire*/
+
+.carouselle {
+    height: 200px;
+    background-color: aqua;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liste-medaille {
+    margin: 50px;
+    background-color: red;
+}
+
+.content {
+    width: 100%;
+}
+
+.en-tete {
+    display: flex;
+    height: 50px;
+}
+
+.en-tete-gauche {
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    font-family: impact;
+}
+
+.en-tete-milieu {
+    background-color: orange;
+}
+.en-tete-droite {
+    background-color: pink;
+}
+
+.en-tete-medaille {
+    width: 100%;
+}

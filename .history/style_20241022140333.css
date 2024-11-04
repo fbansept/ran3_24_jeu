@@ -1,0 +1,10 @@
+section > div,
+section > img,
+section > article {
+  height: 400px;
+}
+
+section > article ,
+section > div{
+  border
+}

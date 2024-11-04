@@ -1,0 +1,2 @@
+const monTitre = 42;
+

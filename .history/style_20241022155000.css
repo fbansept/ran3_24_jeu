@@ -1,0 +1,29 @@
+section > div > img,
+section > article > div,
+section > div > article {
+  height: 400px;
+}
+
+section > article > div,
+section > div > article > div {
+  border: 1px solid black;
+}
+
+section > div > article > div {
+  height: 100%;
+  padding: 1em;
+}
+
+section > div > img {
+  object-fit: cover;
+}
+
+/* section > div:nth-child(even) {
+  flex-direction: row-reverse;
+} */
+
+@media (min-width: 992px) {
+  section.row > article.col {
+    margin-top: 0;
+  }
+}

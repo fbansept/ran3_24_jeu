@@ -1,0 +1,9 @@
+section > div,
+section > div > img,
+section > article {
+  height: 400px;
+}
+
+section > div > article{
+  border: 1px solid black;
+}

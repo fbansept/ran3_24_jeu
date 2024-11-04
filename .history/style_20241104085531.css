@@ -1,0 +1,16 @@
+body: {
+    width: 100%
+    hei;
+}
+
+.scene {
+  width: 1000px;
+  height: 800px;
+  background-color: white;
+}
+
+.joueur {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}

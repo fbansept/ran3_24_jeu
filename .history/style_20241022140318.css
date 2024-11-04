@@ -1,0 +1,7 @@
+section > div,
+section > img,
+section > article {
+  height: 400px;
+}
+
+

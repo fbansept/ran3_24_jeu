@@ -1,0 +1,23 @@
+main > section > div > article > .image > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+main > section > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > section > div > article > .image > .bouton-play {
+  padding: 2em;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 20px;
+  height: 30px;
+}
+
+main > section > div > article > .image > .bouton-play::after {
+  content: "▶";
+  font-family: helvetica;
+}
