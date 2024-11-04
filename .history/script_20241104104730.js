@@ -45,6 +45,8 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.addEventListener("keyup", (e) => {
+  console.log(e);
+
   if (e.code == "ArrowDown") {
     toucheFlecheBasPresse = false;
   }

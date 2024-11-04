@@ -35,23 +35,20 @@ joueur.style.width = largeurJoueur + "px";
 joueur.style.height = largeurJoueur + "px";
 
 document.addEventListener("keydown", (e) => {
-  if (e.code == "ArrowDown") {
-    toucheFlecheBasPresse = true;
-  }
-
-  if (e.code == "ArrowUp") {
-    toucheFlecheHautPresse = true;
-  }
+  toucheFlecheBasPresse = e.code == "ArrowDown";
+  toucheFlecheHautPresse = e.code == "ArrowUp";
 });
 
-document.addEventListener("keyup", (e) => {
-  if (e.code == "ArrowDown") {
+document.addEventListener("keyrelease", (e) => {
+
+  if(e.code == "ArrowDown") {
     toucheFlecheBasPresse = false;
   }
 
   if (e.code == "ArrowUp") {
     toucheFlecheHautPresse = false;
   }
+
 });
 
 setInterval(frame, 1000 / 60);

@@ -44,7 +44,10 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-document.addEventListener("keyup", (e) => {
+document.addEventListener("keyrelease", (e) => {
+
+  col
+
   if (e.code == "ArrowDown") {
     toucheFlecheBasPresse = false;
   }

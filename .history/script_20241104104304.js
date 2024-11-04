@@ -13,7 +13,7 @@ function frame() {
     vitesseY = -vitesseY;
   }
 
-  console.log(toucheFlecheBasPresse);
+  
 }
 
 let positionXjoueur = 0;
@@ -27,6 +27,7 @@ let largeurScene = 1000;
 let toucheFlecheBasPresse = false;
 let toucheFlecheHautPresse = false;
 
+
 const joueur = document.querySelector("#joueur");
 const scene = document.querySelector("#scene");
 scene.style.width = largeurScene + "px";
@@ -35,23 +36,8 @@ joueur.style.width = largeurJoueur + "px";
 joueur.style.height = largeurJoueur + "px";
 
 document.addEventListener("keydown", (e) => {
-  if (e.code == "ArrowDown") {
-    toucheFlecheBasPresse = true;
-  }
-
-  if (e.code == "ArrowUp") {
-    toucheFlecheHautPresse = true;
-  }
-});
-
-document.addEventListener("keyup", (e) => {
-  if (e.code == "ArrowDown") {
-    toucheFlecheBasPresse = false;
-  }
-
-  if (e.code == "ArrowUp") {
-    toucheFlecheHautPresse = false;
-  }
+  toucheFlecheBasPresse = e.code == "ArrowDown";
+  toucheFlecheHautPresse = e.code == "ArrowUp";
 });
 
 setInterval(frame, 1000 / 60);
